@@ -135,11 +135,11 @@ def main():
 
     years = list(range(2013,2020))  #list(range(2013,2015))
     months = ['Jan', 'Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-    # for year in years:
-    #         try:
-    save_hist_data(years[2], [months[3]])
-            # except:
-            #     pass
+    for year in years:
+            try:
+                save_hist_data(year, months)
+            except:
+                pass
 
 
 if __name__== '__main__':
